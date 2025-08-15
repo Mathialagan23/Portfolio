@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Menu, X, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import resume from ".9./assets/Resume-Mathialagan.pdf"; // Import from src/assets
+import resume from "./assets/Resume-Mathialagan.pdf"; // Import from src/assets
 
 
 const Navbar = () => {
@@ -9,7 +9,7 @@ const Navbar = () => {
 
   const navItems = [
     { name: "Home", href: "#home" },
-    { name: "About", href: "#about" },
+    { ame: "About", href: "#about" },
     { name: "Projects", href: "#projects" },
     { name: "Skills", href: "#skills" },
     { name: "Contact", href: "#contact" },
