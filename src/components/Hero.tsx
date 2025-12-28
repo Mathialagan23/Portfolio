@@ -16,7 +16,7 @@ const Hero = () => {
           <div className="flex-1 text-center lg:text-left animate-fade-in">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-navy mb-6 font-poppins">
               Hi, I'm{" "}
-              <span className="text-gradient-accent">Mathialagan T</span>
+              <span className="text-gradient-accent">Mathialagan</span>
             </h1>
             
             <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-navy-light mb-6 font-poppins">

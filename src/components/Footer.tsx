@@ -20,7 +20,7 @@ const Footer = () => {
     {
       name: "GitHub",
       icon: <Github className="w-5 h-5" />,
-      href: "https://github.com/mathialagan-t",
+      href: "https://github.com/Mathialagan23",
     },
     {
       name: "LinkedIn", 
