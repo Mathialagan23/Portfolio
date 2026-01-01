@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Mail } from "lucide-react";
-import profileAvatar from "@/assets/profile-avatar.jpg";
+import profile from "@/assets/photo.jpg";
 
 const Hero = () => {
   const scrollToSection = (href: string) => {
@@ -23,8 +23,8 @@ const Hero = () => {
               Aspiring Web Developer & UI/UX Designer
             </h2>
             
-            <p className="text-lg text-muted-foreground mb-8 max-w-2xl font-inter leading-relaxed">
-              Passionate about UX/UI and web development, I create clean, user-friendly websites and applications that deliver seamless digital experiences. Skilled in modern web technologies and Figma, I transform ideas into visually engaging and functional products.
+            <p className="text-lg text-muted-foreground mb-8 max-w-2xl font-inter leading-relaxed" >
+              I am a motivated full-stack developer with a strong focus on building reliable, scalable, and maintainable web applications. I enjoy working on real-world problems, collaborating with teams, and delivering features that improve user experience and business outcomes. With a solid understanding of end-to-end application development, I can contribute to both frontend and backend tasks, write clean and efficient code, and adapt quickly to new requirements. I am eager to grow within an organization where I can continuously learn, take ownership of responsibilities, and contribute to building high-quality digital products.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -48,11 +48,11 @@ const Hero = () => {
           </div>
 
           {/* Profile Image */}
-          {/* <div className="flex-shrink-0 animate-slide-up">
+           <div className="flex-shrink-0 animate-slide-up">
             <div className="relative">
               <div className="w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-elegant hover:shadow-glow transition-all duration-500">
                 <img
-                  src={profileAvatar}
+                  src={profile}
                   alt="Mathialagan T - Full-Stack Developer"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                 />
@@ -62,7 +62,7 @@ const Hero = () => {
               <div className="absolute inset-0 rounded-full border-2 border-teal/20 scale-110 animate-pulse"></div>
               <div className="absolute inset-0 rounded-full border border-teal/10 scale-125"></div>
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
     </section>

@@ -90,11 +90,11 @@ const Footer = () => {
               © {currentYear} Mathialagan T. All rights reserved.
             </p>
             
-            <div className="flex items-center gap-2 text-gray-300 font-inter text-sm">
+            {/* <div className="flex items-center gap-2 text-gray-300 font-inter text-sm">
               <span>Made with</span>
               <Heart className="w-4 h-4 text-red-500 fill-current" />
               <span>and lots of coffee</span>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

@@ -3,6 +3,23 @@ import { ExternalLink, Github, Figma } from "lucide-react";
 
 const Projects = () => {
   const projects = [
+
+    {
+      title: "Travel Planner App",
+      description: "A full-stack travel planning application that helps users organize trips by itineraries, manage expenses, and track travel details like flights, accommodations, and transport.Includes authentication, budget tracking with currency support, and itinerary-linked expenses, built using the MERN stack.",
+      technologies: ["MongoDB", "React", "Node.js", "Express.js"],
+      liveLink: "https://trekkers-heaven.vercel.app/",
+      codeLink: "https://github.com/Mathialagan23/Trekkers_Heaven.git",
+      type: "web"
+    },
+    {
+      title: "Todo Application",
+      description:"A simple and efficient task management application that allows users to create, update, and delete todos with persistent storage. Built with a RESTful backend and a responsive React frontend, focusing on clean architecture and state management.",
+      technologies: ["MongoDB", "React", "Node.js", "Express.js"],
+      liveLink: "https://yourtodosat.netlify.app/",
+      codeLink: "https://github.com/Mathialagan23/Todo-app.git",
+      type: "web"
+    },
     {
       title: "IT Consulting Company Landing Page",
       description: "Designed and prototyped a professional landing page for an IT consulting company using Figma, including sections for services, case studies, testimonials, and contact forms.",
@@ -11,28 +28,13 @@ const Projects = () => {
       type: "design"
     },
     {
-      title: "Travel Management Website",
-      description: "Designed and developed a travel management platform for backpackers using HTML, CSS, and JavaScript, featuring itineraries, bookings, and admin functions.",
-      technologies: ["HTML", "CSS", "JavaScript"],
-      liveLink: "#",
-      codeLink: "#",
-      type: "web"
-    },
-    {
       title: "Trendsetter",
       description: "A clean and modern Figma e-commerce design for a clothing brand, featuring intuitive navigation, stylish product displays, and detailed product pages. Designed with a neutral palette and bold typography to reflect a premium shopping experience.",
       technologies: ["Figma"],
       figmaLink: "https://www.figma.com/proto/gaImyNIkY7yetcKEejmgoV/Untitled?page-id=0%3A1&node-id=1-5&viewport=356%2C422%2C0.28&t=whK8x0FXpnayCERC-1&scaling=min-zoom&content-scaling=fixed",
       type: "design"
-    },
-    {
-      title: "E-commerce Website",
-      description: "Created a feature-rich online store with product listings, shopping cart, checkout, and customer support sections.",
-      technologies: ["HTML", "CSS", "JavaScript"],
-      liveLink: "#",
-      codeLink: "#",
-      type: "web"
     }
+    
     
   ];
 

@@ -21,7 +21,9 @@ const About = () => {
               <div>
                 <h3 className="text-xl font-semibold text-navy mb-2 font-poppins">Education & Background</h3>
                 <p className="text-muted-foreground font-inter leading-relaxed">
-                  Currently pursuing my studies while diving deep into web development. 
+                  B-Tech, Computer Science and Business Systems, 2021 - 2025 <br />
+                  Francis Xavier Engineering College - Tirunelveli, Tamilnadu <br />
+                  CGPA: 7.3/10 <br />
                   I believe in continuous learning and staying updated with the latest 
                   technologies and industry best practices.
                 </p>
@@ -69,10 +71,10 @@ const About = () => {
               <div className="text-navy font-medium font-inter">Technologies</div>
             </div>
             
-            <div className="text-center p-6 bg-white rounded-2xl shadow-card hover:shadow-glow transition-all duration-300">
+            {/* <div className="text-center p-6 bg-white rounded-2xl shadow-card hover:shadow-glow transition-all duration-300">
               <div className="text-3xl font-bold text-gradient-accent mb-2 font-poppins">1+</div>
               <div className="text-navy font-medium font-inter">Years Learning</div>
-            </div>
+            </div> */}
             
             <div className="text-center p-6 bg-white rounded-2xl shadow-card hover:shadow-glow transition-all duration-300">
               <div className="text-3xl font-bold text-gradient-accent mb-2 font-poppins">∞</div>

@@ -4,7 +4,8 @@ import {
   Database, 
   Smartphone,
   Figma,
-  Terminal
+  Terminal,
+  Github
 } from "lucide-react";
 
 const Skills = () => {
@@ -25,19 +26,19 @@ const Skills = () => {
       color: "from-yellow-500 to-yellow-600"
     },
     {
-      name: "React",
-      icon: <Smartphone className="w-6 h-6" />,
-      color: "from-cyan-500 to-cyan-600"
-    },
-    {
       name: "Figma",
       icon: <Figma className="w-6 h-6" />,
       color: "from-purple-500 to-purple-600"
     },
     {
-      name: "C",
+      name: "MERN Stack",
       icon: <Database className="w-6 h-6" />,
-      color: "from-gray-600 to-gray-700"
+      color: "from-green-500 to-green-600"
+    },
+    {
+      name: "Git & GitHub",
+      icon: <Github className="w-6 h-6" />,
+      color: "from-gray-500 to-gray-600"
     }
   ];
 
