@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Menu, X, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import resume from "../assets/Resume-MathialaganT.pdf";
+import resume from "../assets/Resume-Mathialagan1-1.pdf";
 
 
 const Navbar = () => {
