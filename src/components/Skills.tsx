@@ -1,79 +1,75 @@
-import { 
-  Code, 
-  Palette, 
-  Database, 
-  Smartphone,
-  Figma,
-  Terminal,
-  Github
-} from "lucide-react";
+import { Code, Database, Cloud, Github, Figma } from "lucide-react";
 
 const Skills = () => {
-  const skills = [
+  const skillGroups = [
     {
-      name: "HTML",
-      icon: <Code className="w-6 h-6" />,
-      color: "from-orange-500 to-orange-600"
+      title: "Frontend",
+      icon: <Code className="w-7 h-7" />,
+      skills: ["HTML", "CSS", "JavaScript", "React.js"],
+      color: "from-orange-500 to-red-500"
     },
     {
-      name: "CSS",
-      icon: <Palette className="w-6 h-6" />,
-      color: "from-blue-500 to-blue-600"
+      title: "Backend",
+      icon: <Database className="w-7 h-7" />,
+      skills: ["Node.js", "Express.js", "MongoDB"],
+      color: "from-green-500 to-emerald-600"
     },
     {
-      name: "JavaScript",
-      icon: <Terminal className="w-6 h-6" />,
-      color: "from-yellow-500 to-yellow-600"
+      title: "Cloud & DevOps",
+      icon: <Cloud className="w-7 h-7" />,
+      skills: [
+        "Google Cloud (Cloud Run)",
+        "Docker",
+        "Firebase",
+        "Vercel",
+        "Render"
+      ],
+      color: "from-blue-500 to-indigo-600"
     },
     {
-      name: "Figma",
-      icon: <Figma className="w-6 h-6" />,
-      color: "from-purple-500 to-purple-600"
-    },
-    {
-      name: "MERN Stack",
-      icon: <Database className="w-6 h-6" />,
-      color: "from-green-500 to-green-600"
-    },
-    {
-      name: "Git & GitHub",
-      icon: <Github className="w-6 h-6" />,
-      color: "from-gray-500 to-gray-600"
+      title: "Design & Tools",
+      icon: <Figma className="w-7 h-7" />,
+      skills: ["Figma", "Git", "GitHub", "VS Code"],
+      color: "from-purple-500 to-pink-500"
     }
   ];
 
   return (
-    <section id="skills" className="py-20 bg-secondary/30">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="section-title">My Skills</h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto font-inter">
-            Technologies and tools I work with to bring ideas to life
+    <section id="skills" className="py-24 bg-gray-50">
+      <div className="container mx-auto px-6">
+
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold mb-4">Skills</h2>
+          <p className="text-gray-500">
+            Technologies I use to build modern full-stack applications
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-          {skills.map((skill, index) => (
-            <div 
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {skillGroups.map((group, index) => (
+            <div
               key={index}
-              className="skill-badge text-center group animate-slide-up hover:bg-white"
-              style={{ animationDelay: `${index * 0.1}s` }}
+              className="group p-6 rounded-2xl bg-white shadow-lg hover:shadow-2xl transition duration-300"
             >
-              <div className={`w-12 h-12 bg-gradient-to-r ${skill.color} rounded-xl flex items-center justify-center mx-auto mb-3 text-white group-hover:scale-110 transition-transform duration-300`}>
-                {skill.icon}
+              <div
+                className={`w-12 h-12 flex items-center justify-center rounded-xl text-white bg-gradient-to-r ${group.color} mb-4 group-hover:scale-110 transition`}
+              >
+                {group.icon}
               </div>
-              <span className="font-medium text-navy font-inter">{skill.name}</span>
+
+              <h3 className="text-xl font-semibold mb-3">{group.title}</h3>
+
+              <ul className="space-y-2 text-gray-600">
+                {group.skills.map((skill, i) => (
+                  <li key={i} className="hover:text-black transition">
+                    • {skill}
+                  </li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>
 
-        <div className="mt-16 text-center animate-fade-in">
-          <p className="text-muted-foreground font-inter max-w-2xl mx-auto">
-            I'm constantly learning and exploring new technologies to stay current with 
-            industry trends and best practices. My goal is to build robust, scalable 
-            applications using the most appropriate tools for each project.
-          </p>
-        </div>
       </div>
     </section>
   );

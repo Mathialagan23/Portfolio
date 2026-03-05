@@ -20,16 +20,13 @@ const Hero = () => {
             </h1>
 
             <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-navy-light mb-6 font-poppins">
-              Aspiring Web Developer & UI/UX Designer
+              Aspiring Web Developer
             </h2>
 
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl font-inter leading-relaxed" >
-              I am a full-stack developer focused on building reliable, scalable, and maintainable web applications. I work on real-world
-              problems by collaborating with teams and delivering features that support strong user experiences and business goals.
-              With a solid understanding of end-to-end application development, I contribute effectively to both frontend and backend
-              tasks, write clean and efficient code, and adapt quickly to evolving requirements. I aim to grow within an organization
-              where I can take ownership of responsibilities, continuously learn, and contribute to the development of high-quality
-              digital products.
+              I am a passionate Web Developer with experience in building dynamic and responsive web applications using HTML, CSS, JavaScript, and React.js. I develop scalable backend services using Node.js and MongoDB, focusing on creating efficient full-stack solutions.
+
+              I also have hands-on experience deploying applications using cloud and DevOps technologies such as Google Cloud Platform (Cloud Run), Firebase Hosting, Docker, Vercel, and Render. I enjoy learning new technologies and solving real-world problems through practical development and cloud deployment
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">

@@ -13,8 +13,16 @@ const Projects = () => {
       type: "web"
     },
     {
+      title: "Habit Tracker",
+      description: "A full-stack MERN habit tracking application that helps users build consistent routines. Features habit management, completion tracking, analytics dashboards, weekly activity charts, monthly progress visualization, and a yearly activity heatmap.",
+      technologies: ["React", "Node.js", "Express", "MongoDB", "JWT", "REST API"],
+      liveLink: "",
+      codeLink: "https://github.com/Mathialagan23/habit_tracker",
+      type: "web"
+    },
+    {
       title: "Todo Application",
-      description:"A simple and efficient task management application that allows users to create, update, and delete todos with persistent storage. Built with a RESTful backend and a responsive React frontend, focusing on clean architecture and state management.",
+      description: "A simple and efficient task management application that allows users to create, update, and delete todos with persistent storage. Built with a RESTful backend and a responsive React frontend, focusing on clean architecture and state management.",
       technologies: ["MongoDB", "React", "Node.js", "Express.js"],
       liveLink: "https://yourtodosat.netlify.app/",
       codeLink: "https://github.com/Mathialagan23/Todo-app.git",
@@ -34,8 +42,8 @@ const Projects = () => {
       figmaLink: "https://www.figma.com/proto/gaImyNIkY7yetcKEejmgoV/Untitled?page-id=0%3A1&node-id=1-5&viewport=356%2C422%2C0.28&t=whK8x0FXpnayCERC-1&scaling=min-zoom&content-scaling=fixed",
       type: "design"
     }
-    
-    
+
+
   ];
 
   return (
@@ -50,8 +58,8 @@ const Projects = () => {
 
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="project-card animate-slide-up"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
@@ -67,7 +75,7 @@ const Projects = () => {
               <div className="mb-6">
                 <div className="flex flex-wrap gap-2">
                   {project.technologies.map((tech, techIndex) => (
-                    <span 
+                    <span
                       key={techIndex}
                       className="skill-badge text-sm font-medium text-navy"
                     >
@@ -94,7 +102,7 @@ const Projects = () => {
                     </Button>
                   </>
                 )}
-                
+
                 {project.type === "design" && (
                   <Button variant="default" className="hero-button" asChild>
                     <a href={project.figmaLink} target="_blank" rel="noopener noreferrer">
