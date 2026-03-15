@@ -11,22 +11,66 @@ const Hero = () => {
   return (
     <section id="home" className="min-h-screen flex items-center bg-gradient-to-br from-background to-secondary/30 pt-16">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
+        <div className="animate-fade-in">
+
+          {/* Profile Image - floated right so text wraps around it */}
+          <div
+            className="hidden lg:block float-right animate-slide-up flex-shrink-0"
+            style={{
+              shapeOutside: "circle(50%)",
+              width: "clamp(280px, 25vw, 384px)",
+              height: "clamp(280px, 25vw, 384px)",
+              marginLeft: "2rem",
+              marginBottom: "1rem",
+            }}
+          >
+            <div className="relative w-full h-full">
+              <div className="w-full h-full rounded-full overflow-hidden shadow-elegant hover:shadow-glow transition-all duration-500">
+                <img
+                  src={profile}
+                  alt="Mathialagan T - Full-Stack Developer"
+                  className="w-full h-full object-contain hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div className="absolute inset-0 rounded-full border-2 border-teal/20 scale-110 animate-pulse pointer-events-none"></div>
+              <div className="absolute inset-0 rounded-full border border-teal/10 scale-125 pointer-events-none"></div>
+            </div>
+          </div>
+
+          {/* Profile Image - Mobile only (centered, no float) */}
+          <div
+            className="block lg:hidden mx-auto mb-8 animate-slide-up flex-shrink-0"
+            style={{
+              width: "clamp(180px, 50vw, 240px)",
+              height: "clamp(180px, 50vw, 240px)",
+            }}
+          >
+            <div className="relative w-full h-full">
+              <div className="w-full h-full rounded-full overflow-hidden shadow-elegant hover:shadow-glow transition-all duration-500">
+                <img
+                  src={profile}
+                  alt="Mathialagan T - Full-Stack Developer"
+                  className="w-full h-full object-contain hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div className="absolute inset-0 rounded-full border-2 border-teal/20 scale-110 animate-pulse pointer-events-none"></div>
+              <div className="absolute inset-0 rounded-full border border-teal/10 scale-125 pointer-events-none"></div>
+            </div>
+          </div>
+
           {/* Text Content */}
-          <div className="flex-1 text-center lg:text-left animate-fade-in">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-navy mb-6 font-poppins">
+          <div className="text-center lg:text-left">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-navy dark:text-white mb-6 font-poppins">
               Hi, I'm{" "}
               <span className="text-gradient-accent">Mathialagan</span>
             </h1>
 
-            <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-navy-light mb-6 font-poppins">
+            <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-navy-light dark:text-gray-300 mb-6 font-poppins">
               Aspiring Web Developer
             </h2>
 
-            <p className="text-lg text-muted-foreground mb-8 max-w-2xl font-inter leading-relaxed" >
-              I am a passionate Web Developer with experience in building dynamic and responsive web applications using HTML, CSS, JavaScript, and React.js. I develop scalable backend services using Node.js and MongoDB, focusing on creating efficient full-stack solutions.
-
-              I also have hands-on experience deploying applications using cloud and DevOps technologies such as Google Cloud Platform (Cloud Run), Firebase Hosting, Docker, Vercel, and Render. I enjoy learning new technologies and solving real-world problems through practical development and cloud deployment
+            <p className="text-lg text-muted-foreground mb-8 font-inter leading-relaxed text-justify">
+              I am a full-stack developer focused on building reliable, scalable, and maintainable web applications. I work across the entire development stack, designing responsive frontend interfaces and developing robust backend APIs while ensuring smooth integration between services. I have experience deploying cloud-native applications using modern tools and platforms such as Docker and Google Cloud, implementing CI/CD pipelines, serverless deployments, and automated background jobs. I enjoy solving real-world problems by building systems that are efficient, secure, and user-focused. I continuously improve my skills in full-stack development, cloud infrastructure, and DevOps practices while writing clean, maintainable code. I aim to grow in an environment where I can take ownership of projects, collaborate with teams, and contribute to building high-quality digital products that deliver real value.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -49,22 +93,8 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Profile Image */}
-          <div className="flex-shrink-0 animate-slide-up">
-            <div className="relative">
-              <div className="w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-elegant hover:shadow-glow transition-all duration-500">
-                <img
-                  src={profile}
-                  alt="Mathialagan T - Full-Stack Developer"
-                  className="w-full h-full object-contain hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-
-
-              <div className="absolute inset-0 rounded-full border-2 border-teal/20 scale-110 animate-pulse"></div>
-              <div className="absolute inset-0 rounded-full border border-teal/10 scale-125"></div>
-            </div>
-          </div>
+          {/* Clear float */}
+          <div className="clear-both"></div>
         </div>
       </div>
     </section>

@@ -5,6 +5,15 @@ const Projects = () => {
   const projects = [
 
     {
+      title: "Habit Tracker",
+      description: "Built a full-stack Habit Tracker web app using React, Node.js, Express, and MongoDB Atlas. Containerized the backend with Docker and deployed it on Google Cloud Run for scalable serverless execution. Implemented CI/CD pipeline using Google Cloud Build integrated with GitHub to automatically build and deploy updates. Hosted the frontend on Firebase Hosting and configured Google Cloud Scheduler for automated reminder. ",
+      technologies: ["React", "Node.js", "Express", "MongoDB","GCP", "Docker", "Cloud run"],
+      liveLink: "https://habit-tracker-490113.web.app/",
+      codeLink: "https://github.com/Mathialagan23/habit-tracker-prod",
+      type: "web"
+    },
+
+    {
       title: "Travel Planner App",
       description: "A full-stack travel planning application that helps users organize trips by itineraries, manage expenses, and track travel details like flights, accommodations, and transport.Includes authentication, budget tracking with currency support, and itinerary-linked expenses, built using the MERN stack.",
       technologies: ["MongoDB", "React", "Node.js", "Express.js"],
@@ -12,14 +21,7 @@ const Projects = () => {
       codeLink: "https://github.com/Mathialagan23/Trekkers_Heaven.git",
       type: "web"
     },
-    {
-      title: "Habit Tracker",
-      description: "A full-stack MERN habit tracking application that helps users build consistent routines. Features habit management, completion tracking, analytics dashboards, weekly activity charts, monthly progress visualization, and a yearly activity heatmap.",
-      technologies: ["React", "Node.js", "Express", "MongoDB", "JWT", "REST API"],
-      liveLink: "",
-      codeLink: "https://github.com/Mathialagan23/habit_tracker",
-      type: "web"
-    },
+    
     {
       title: "Todo Application",
       description: "A simple and efficient task management application that allows users to create, update, and delete todos with persistent storage. Built with a RESTful backend and a responsive React frontend, focusing on clean architecture and state management.",
@@ -64,7 +66,7 @@ const Projects = () => {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="mb-4">
-                <h3 className="text-xl font-semibold text-navy mb-3 font-poppins">
+                <h3 className="text-xl font-semibold text-navy dark:text-white mb-3 font-poppins">
                   {project.title}
                 </h3>
                 <p className="text-muted-foreground font-inter leading-relaxed">
@@ -77,7 +79,7 @@ const Projects = () => {
                   {project.technologies.map((tech, techIndex) => (
                     <span
                       key={techIndex}
-                      className="skill-badge text-sm font-medium text-navy"
+                      className="skill-badge text-sm font-medium text-navy dark:text-gray-200"
                     >
                       {tech}
                     </span>

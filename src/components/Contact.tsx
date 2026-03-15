@@ -58,7 +58,7 @@ const Contact = () => {
           {/* Contact Info */}
           <div className="space-y-8 animate-slide-up">
             <div>
-              <h3 className="text-2xl font-semibold text-navy mb-6 font-poppins">
+              <h3 className="text-2xl font-semibold text-navy dark:text-white mb-6 font-poppins">
                 Let's Connect
               </h3>
               <p className="text-muted-foreground font-inter leading-relaxed mb-8">
@@ -68,12 +68,12 @@ const Contact = () => {
             </div>
 
             <div className="space-y-4">
-              <div className="flex items-center gap-4 p-4 bg-secondary/50 rounded-xl hover:bg-white transition-colors duration-300">
+              <div className="flex items-center gap-4 p-4 bg-secondary/50 rounded-xl hover:bg-white dark:hover:bg-slate-700 transition-colors duration-300">
                 <div className="w-12 h-12 bg-gradient-to-br from-teal to-teal-light rounded-xl flex items-center justify-center">
                   <Mail className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-navy font-poppins">Email</h4>
+                  <h4 className="font-semibold text-navy dark:text-white font-poppins">Email</h4>
                   <a 
                     href="mailto:mathialagan@example.com" 
                     className="text-muted-foreground hover:text-teal transition-colors duration-300 font-inter"
@@ -83,12 +83,12 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div className="flex items-center gap-4 p-4 bg-secondary/50 rounded-xl hover:bg-white transition-colors duration-300">
+              <div className="flex items-center gap-4 p-4 bg-secondary/50 rounded-xl hover:bg-white dark:hover:bg-slate-700 transition-colors duration-300">
                 <div className="w-12 h-12 bg-gradient-to-br from-navy to-navy-light rounded-xl flex items-center justify-center">
                   <Linkedin className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-navy font-poppins">LinkedIn</h4>
+                  <h4 className="font-semibold text-navy dark:text-white font-poppins">LinkedIn</h4>
                   <a 
                     href="https://linkedin.com/in/mathialagan-t" 
                     target="_blank"
@@ -104,9 +104,9 @@ const Contact = () => {
 
           {/* Contact Form */}
           <div className="animate-fade-in">
-            <form onSubmit={handleSubmit} className="space-y-6 p-8 bg-white rounded-2xl shadow-card">
+            <form onSubmit={handleSubmit} className="space-y-6 p-8 bg-white dark:bg-slate-800 rounded-2xl shadow-card">
               <div className="space-y-2">
-                <Label htmlFor="name" className="text-navy font-medium font-inter">
+                <Label htmlFor="name" className="text-navy dark:text-gray-200 font-medium font-inter">
                   Full Name
                 </Label>
                 <Input
@@ -121,7 +121,7 @@ const Contact = () => {
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="email" className="text-navy font-medium font-inter">
+                <Label htmlFor="email" className="text-navy dark:text-gray-200 font-medium font-inter">
                   Email Address
                 </Label>
                 <Input
@@ -136,7 +136,7 @@ const Contact = () => {
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="message" className="text-navy font-medium font-inter">
+                <Label htmlFor="message" className="text-navy dark:text-gray-200 font-medium font-inter">
                   Message
                 </Label>
                 <Textarea

@@ -19,7 +19,7 @@ const About = () => {
                 <GraduationCap className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-navy mb-2 font-poppins">Education & Background</h3>
+                <h3 className="text-xl font-semibold text-navy dark:text-white mb-2 font-poppins">Education & Background</h3>
                 <p className="text-muted-foreground font-inter leading-relaxed">
                   B-Tech, Computer Science and Business Systems, 2021 - 2025 <br />
                   Francis Xavier Engineering College - Tirunelveli, Tamilnadu <br />
@@ -35,7 +35,7 @@ const About = () => {
                 <Code className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-navy mb-2 font-poppins">Development Focus</h3>
+                <h3 className="text-xl font-semibold text-navy dark:text-white mb-2 font-poppins">Development Focus</h3>
                 <p className="text-muted-foreground font-inter leading-relaxed">
                   Specializing in full-stack web development with a focus on creating 
                   responsive, accessible, and performant applications. I enjoy working 
@@ -49,7 +49,7 @@ const About = () => {
                 <Heart className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-navy mb-2 font-poppins">Passion & Vision</h3>
+                <h3 className="text-xl font-semibold text-navy dark:text-white mb-2 font-poppins">Passion & Vision</h3>
                 <p className="text-muted-foreground font-inter leading-relaxed">
                   I'm passionate about clean code, intuitive design, and solving real-world 
                   problems through technology. My goal is to create digital solutions that 
@@ -61,24 +61,24 @@ const About = () => {
 
           {/* Stats or additional info */}
           <div className="grid grid-cols-2 gap-6 animate-fade-in">
-            <div className="text-center p-6 bg-white rounded-2xl shadow-card hover:shadow-glow transition-all duration-300">
+            <div className="text-center p-6 bg-white dark:bg-slate-800 rounded-2xl shadow-card hover:shadow-glow transition-all duration-300">
               <div className="text-3xl font-bold text-gradient-accent mb-2 font-poppins">4+</div>
-              <div className="text-navy font-medium font-inter">Projects Completed</div>
+              <div className="text-navy dark:text-gray-200 font-medium font-inter">Projects Completed</div>
             </div>
             
-            <div className="text-center p-6 bg-white rounded-2xl shadow-card hover:shadow-glow transition-all duration-300">
+            <div className="text-center p-6 bg-white dark:bg-slate-800 rounded-2xl shadow-card hover:shadow-glow transition-all duration-300">
               <div className="text-3xl font-bold text-gradient-accent mb-2 font-poppins">6+</div>
-              <div className="text-navy font-medium font-inter">Technologies</div>
+              <div className="text-navy dark:text-gray-200 font-medium font-inter">Technologies</div>
             </div>
             
             {/* <div className="text-center p-6 bg-white rounded-2xl shadow-card hover:shadow-glow transition-all duration-300">
               <div className="text-3xl font-bold text-gradient-accent mb-2 font-poppins">1+</div>
-              <div className="text-navy font-medium font-inter">Years Learning</div>
+              <div className="text-navy dark:text-gray-200 font-medium font-inter">Years Learning</div>
             </div> */}
             
-            <div className="text-center p-6 bg-white rounded-2xl shadow-card hover:shadow-glow transition-all duration-300">
+            <div className="text-center p-6 bg-white dark:bg-slate-800 rounded-2xl shadow-card hover:shadow-glow transition-all duration-300">
               <div className="text-3xl font-bold text-gradient-accent mb-2 font-poppins">∞</div>
-              <div className="text-navy font-medium font-inter">Passion Level</div>
+              <div className="text-navy dark:text-gray-200 font-medium font-inter">Passion Level</div>
             </div>
           </div>
         </div>

@@ -149,12 +149,14 @@ All colors MUST be HSL.
   .hero-button-outline {
     @apply border-2 border-navy text-navy font-medium px-8 py-3 rounded-xl;
     @apply hover:bg-navy hover:text-white transition-all duration-300 hover:scale-105;
+    @apply dark:border-teal dark:text-teal dark:hover:bg-teal dark:hover:border-teal dark:hover:text-white;
   }
 
   .project-card {
     @apply bg-white rounded-2xl p-6 shadow-card hover:shadow-glow;
     @apply border border-border hover:border-teal/20;
     @apply transition-all duration-300 hover:scale-[1.02] hover:-translate-y-1;
+    @apply dark:bg-slate-800 dark:border-slate-700 dark:hover:border-teal/40;
   }
 
   .skill-badge {
@@ -164,7 +166,7 @@ All colors MUST be HSL.
   }
 
   .section-title {
-    @apply text-3xl md:text-4xl font-bold text-navy mb-4;
+    @apply text-3xl md:text-4xl font-bold text-navy mb-4 dark:text-white;
     font-family: 'Poppins', sans-serif;
   }
 
@@ -196,6 +198,7 @@ All colors MUST be HSL.
 @layer utilities {
   .text-gradient {
     @apply bg-gradient-to-r from-navy to-navy-light bg-clip-text text-transparent;
+    @apply dark:from-white dark:to-gray-300;
   }
 
   .text-gradient-accent {
