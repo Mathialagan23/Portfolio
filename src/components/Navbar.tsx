@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Menu, X, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import resume from "../assets/Resume-Mathialagan_T.pdf";
+import resume from "../assets/Resume-MathialaganT-1.pdf";
 
 
 const Navbar = () => {
@@ -50,7 +50,7 @@ const Navbar = () => {
 
           {/* Resume Button - Desktop */}
           <div className="hidden md:block">
-            <a href={resume} download="Resume-Mathialagan_T.pdf">
+            <a href={resume} download="Resume-MathialaganT-1.pdf">
               <Button variant="outline" className="hero-button-outline">
                 <Download className="w-4 h-4 mr-2" />
                 Download Resume
@@ -85,7 +85,7 @@ const Navbar = () => {
             ))}
             {/* Resume Button - Mobile */}
             <div className="px-3 py-2">
-              <a href={resume} download="Resume-Mathialagan1.pdf" className="block w-full">
+              <a href={resume} download="Resume-MathialaganT-1.pdf" className="block w-full">
                 <Button variant="outline" size="sm" className="hero-button-outline w-full">
                   <Download className="w-4 h-4 mr-2" />
                   Download Resume
