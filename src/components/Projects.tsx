@@ -7,7 +7,7 @@ const Projects = () => {
     {
       title: "Habit Tracker",
       description: "Built a full-stack Habit Tracker web app using React, Node.js, Express, and MongoDB Atlas. Containerized the backend with Docker and deployed it on Google Cloud Run for scalable serverless execution. Implemented CI/CD pipeline using Google Cloud Build integrated with GitHub to automatically build and deploy updates. Hosted the frontend on Firebase Hosting and configured Google Cloud Scheduler for automated reminder. ",
-      technologies: ["React", "Node.js", "Express", "MongoDB","GCP", "Docker", "Cloud run"],
+      technologies: ["React", "Node.js", "Express", "MongoDB", "GCP", "Docker", "Cloud run"],
       liveLink: "https://habit-tracker-490113.web.app/",
       codeLink: "https://github.com/Mathialagan23/habit-tracker-prod",
       type: "web"
@@ -21,7 +21,16 @@ const Projects = () => {
       codeLink: "https://github.com/Mathialagan23/Trekkers_Heaven.git",
       type: "web"
     },
-    
+
+    {
+      title: "Zenith Fitness Tracker",
+      description: "A production-ready full-stack fitness platform for tracking workouts, diet, and body progress. Implements plan-driven training, calorie and protein monitoring, and weekly progress analytics. Built with React, Node.js, and MongoDB, secured with JWT, CSRF protection, and rate limiting, and deployed using Docker on Google Cloud Run with Firebase Hosting.",
+      technologies: ["MongoDB", "React", "Node.js", "Express.js", "Firebase", "Google Cloud Run", "Docker"],
+      liveLink: "https://zenith-fitness-492012.web.app/",
+      codeLink: "https://github.com/Mathialagan23/zenith-Fitness",
+      type: "web"
+    },
+
     {
       title: "Todo Application",
       description: "A simple and efficient task management application that allows users to create, update, and delete todos with persistent storage. Built with a RESTful backend and a responsive React frontend, focusing on clean architecture and state management.",
