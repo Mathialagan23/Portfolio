@@ -26,7 +26,7 @@ const Projects = () => {
       title: "Zenith Fitness Tracker",
       description: "A production-ready full-stack fitness platform for tracking workouts, diet, and body progress. Implements plan-driven training, calorie and protein monitoring, and weekly progress analytics. Built with React, Node.js, and MongoDB, secured with JWT, CSRF protection, and rate limiting, and deployed using Docker on Google Cloud Run with Firebase Hosting.",
       technologies: ["MongoDB", "React", "Node.js", "Express.js", "Firebase", "Google Cloud Run", "Docker"],
-      liveLink: "https://zenith-fitness-492012.web.app/",
+      liveLink: "https://zenith-fitness-492214.web.app/",
       codeLink: "https://github.com/Mathialagan23/zenith-Fitness",
       type: "web"
     },
