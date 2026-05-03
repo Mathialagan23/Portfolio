@@ -61,7 +61,7 @@ const Navbar = () => {
                 {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
               </span>
             </button>
-            <a href={resume} download="Resume-MathialaganT-1.pdf">
+            <a href={resume} download="Resume-MathialaganT.pdf">
               <Button variant="outline" className="hero-button-outline">
                 <Download className="w-4 h-4 mr-2" />
                 Download Resume
