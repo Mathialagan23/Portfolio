@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Menu, X, Download, Sun, Moon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTheme } from "@/contexts/ThemeContext";
-import resume from "../assets/Resume-MathialaganT.pdf";
+import resume from "../assets/Resume_Mathialagan_T.pdf";
 
 
 const Navbar = () => {
@@ -61,7 +61,7 @@ const Navbar = () => {
                 {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
               </span>
             </button>
-            <a href={resume} download="Resume-MathialaganT.pdf">
+            <a href={resume} download="Resume_Mathialagan_T.pdf">
               <Button variant="outline" className="hero-button-outline">
                 <Download className="w-4 h-4 mr-2" />
                 Download Resume
@@ -105,7 +105,7 @@ const Navbar = () => {
             ))}
             {/* Resume Button - Mobile */}
             <div className="px-3 py-2">
-              <a href={resume} download="Resume-MathialaganT.pdf" className="block w-full">
+              <a href={resume} download="Resume_Mathialagan_T.pdf" className="block w-full">
                 <Button variant="outline" size="sm" className="hero-button-outline w-full">
                   <Download className="w-4 h-4 mr-2" />
                   Download Resume
